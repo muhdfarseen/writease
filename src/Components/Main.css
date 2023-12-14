@@ -1,0 +1,214 @@
+* {
+  color: aliceblue;
+}
+
+.home {
+  display: flex;
+}
+
+.leftsection {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between ;
+  width: 20vw; 
+  background: #202123;
+  order: 1; 
+  padding: 30px;
+}
+
+.para{
+    
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  padding-top: 20px;
+  
+  color: #8C8A99;
+
+}
+
+.icontxt{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+}
+
+.iconimg{
+  width: 25px;
+}
+
+.iconalon{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left: 10px;
+  height: 50px;
+  cursor: pointer;
+   
+}
+
+.iconalon:hover{
+  background: #343541;
+  border-radius: 8px;
+  transition: 500ms;
+}
+
+.icongrp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.rightsection {
+
+  width: 80vw; 
+  order: 2;
+  
+}
+
+.playarea{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+ 
+}
+.txtar{
+  width: 60vw;
+  height:50px ;
+ 
+  overflow-y: scroll;
+  
+}
+
+.txtar::-webkit-scrollbar {
+  display: none;
+}
+
+.form-control::placeholder {
+  color: #8C8A99;
+  
+}
+
+.promptsrc{
+  display: flex;
+  gap: 10px;
+  width: 60vw;
+}
+
+.solution{
+  height: 60vh;
+  background: #40414F;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  width: 60vw;
+  padding: 5px;
+  color: #040214;
+  
+}
+
+.mobileleft{
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobileleft{
+    visibility: unset;
+    width:unset;
+    height: unset;
+    margin: unset;
+    padding: unset;
+    overflow: unset;
+  }
+
+  .leftsection{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+  }
+
+  .rightsection {
+
+    width: 100vw; 
+    order: unset;
+    height: 100vh;
+    overflow: hidden;
+    
+  }
+  
+  .playarea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    height: 85vh;
+   
+  }
+  .txtar{
+    width: 680vw;
+    height:50px ;
+   
+    overflow-y: scroll;
+    
+  }
+  
+  .txtar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .form-control::placeholder {
+    color: #8C8A99;
+    
+  }
+  
+  .promptsrc{
+    display: flex;
+    gap: 10px;
+    width: 90vw;
+  }
+  
+  .solution{
+    height: 60vh;
+    background: #40414F;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border-radius: 7px;
+    width: 90vw;
+    padding: 0px;
+    color: #040214;
+    
+  }
+
+  .navbar{
+      height: 60px;
+      padding: 20px;
+      margin: 0%;
+      
+  }
+
+
+}
+
+
+
+
